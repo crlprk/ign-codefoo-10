@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ign-codefoo-10/static/css/main.2368cf31.css",
+    "main.js": "/ign-codefoo-10/static/js/main.ec97530c.js",
+    "static/js/787.fb1186b9.chunk.js": "/ign-codefoo-10/static/js/787.fb1186b9.chunk.js",
+    "static/media/ign-logo.svg": "/ign-codefoo-10/static/media/ign-logo.1b8046e3b2c53fd7e01efb60076a50a2.svg",
+    "static/media/badge-sd-fill.svg": "/ign-codefoo-10/static/media/badge-sd-fill.c172dcd22bd1f29ca93b.svg",
+    "index.html": "/ign-codefoo-10/index.html",
+    "static/media/left-right-solid.svg": "/ign-codefoo-10/static/media/left-right-solid.f896cbd5f9daa4b6b579.svg",
+    "static/media/badge-4k-fill.svg": "/ign-codefoo-10/static/media/badge-4k-fill.02fed78cc4b55394146a.svg",
+    "static/media/badge-hd-fill.svg": "/ign-codefoo-10/static/media/badge-hd-fill.ff3afe7bac5316df3b4b.svg",
+    "static/media/infinity.svg": "/ign-codefoo-10/static/media/infinity.7d79ae16f99fb5ec281c.svg",
+    "static/media/search.svg": "/ign-codefoo-10/static/media/search.b1f781b99ceaafb9c831949bb54ae3cd.svg",
+    "static/media/chevron-down.svg": "/ign-codefoo-10/static/media/chevron-down.8624f04faf16b2d07c00235d9dc68ae2.svg",
+    "static/media/reply-fill.svg": "/ign-codefoo-10/static/media/reply-fill.815bde24f3770d70f2c4.svg",
+    "static/media/dash.svg": "/ign-codefoo-10/static/media/dash.c9ada6af9e4064c99769.svg",
+    "main.2368cf31.css.map": "/ign-codefoo-10/static/css/main.2368cf31.css.map",
+    "main.ec97530c.js.map": "/ign-codefoo-10/static/js/main.ec97530c.js.map",
+    "787.fb1186b9.chunk.js.map": "/ign-codefoo-10/static/js/787.fb1186b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2368cf31.css",
+    "static/js/main.ec97530c.js"
+  ]
+}
