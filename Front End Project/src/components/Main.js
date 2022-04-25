@@ -25,7 +25,8 @@ export class Main extends React.Component {
                 Due to only developing a front end program and deploying to github pages, a temporary proxy server was used.
                 In a real production environment, a self-hosted proxy server or backend server would replace the temporary server in the fetch request or the API server would be reconfigured
             */
-            requests.push(fetch("https://cors-anywhere.herokuapp.com/https://ign-apis.herokuapp.com/videos?startIndex=" + (20 * i) + "&count=20"));
+            //requests.push(fetch("https://cors-anywhere.herokuapp.com/https://ign-apis.herokuapp.com/videos?startIndex=" + (20 * i) + "&count=20"));   // Temporary proxy server, uncomment before build
+            requests.push(fetch("https://ign-apis.herokuapp.com/videos?startIndex=" + (20 * i) + "&count=20"));   // Alternative link if running in development mode
         }
         Promise.all(requests)
             .then(res => Promise.all(res.map(r => r.json())))
