@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.video-js .vjs-title-bar {
+    display: none;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    margin: 3% 2%;
+}
+.vjs-has-started.video-js .vjs-title-bar {
+    display: flex;
+}
+
+.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-title-bar {
+    visibility: visible;
+    opacity: 0;
+    pointer-events: none;
+    transition: visibility 1s, opacity 1s;
+}
+
+.vjs-audio.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-title-bar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.video-js .vjs-title-bar h1 {
+    font-size: 1.5em;
+}
+
+.video-js .vjs-title-bar .vjs-share-button {
+    height: 1em;
+}
+
+.video-js .vjs-title-bar .vjs-icon-placeholder::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+    background-image: url(./svgs/reply-fill.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+.video-js .vjs-control-bar {
+    background-color: transparent;
+    margin: 10px 0;
+}
+
+.video-js .vjs-autoplay-toggle.vjs-autoplay-on .vjs-icon-placeholder:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(./svgs/infinity.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+    cursor: pointer;
+}
+
+.video-js .vjs-autoplay-toggle.vjs-autoplay-off .vjs-icon-placeholder:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(./svgs/dash.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+    cursor: pointer;
+}
+
+.video-js .vjs-time-control {
+    display: block;
+    min-width: 0;
+    padding: 0 0.2em;
+}
+
+.video-js .vjs-duration {
+    margin-right: auto;
+}
+
+.video-js .vjs-progress-control {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.video-js .vjs-progress-control .vjs-progress-holder {
+    margin: 0 1.5%;
+    height: 3px;
+    background-color: rgba(209, 212, 219, 0.5);
+}
+
+.video-js .vjs-progress-control .vjs-load-progress {
+    background-color: rgb(191, 19, 19);
+}
+
+.video-js .vjs-load-progress div {
+    background-color: rgb(191, 19, 19);
+}
+
+.video-js .vjs-play-progress::after {
+    content: "\f111";
+    font-size: 0.5em;
+    position: absolute;
+    right: -0.45em;
+    top: -0.25em;
+    z-index: 1;
+    color: rgb(191, 19, 19);
+}
+.vjs-slider-horizontal .vjs-volume-level::after {
+    content: "\f111";
+    font-size: 0.5em;
+    position: absolute;
+    right: -0.49em;
+    top: -0.2em;
+    z-index: 1;
+    color: rgb(191, 19, 19);
+}
+
+.video-js .vjs-quality-selector.vjs-360P .vjs-menu-button .vjs-icon-placeholder::before,
+.video-js .vjs-quality-selector.vjs-480P .vjs-menu-button .vjs-icon-placeholder::before,
+.video-js .vjs-quality-selector.vjs-540P .vjs-menu-button .vjs-icon-placeholder::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(./svgs/badge-sd-fill.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+}
+
+.video-js .vjs-quality-selector.vjs-720P .vjs-menu-button .vjs-icon-placeholder::before,
+.video-js .vjs-quality-selector.vjs-1080P .vjs-menu-button .vjs-icon-placeholder::before,
+.video-js .vjs-quality-selector.vjs-1440P .vjs-menu-button .vjs-icon-placeholder::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(./svgs/badge-hd-fill.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+}
+
+.video-js .vjs-quality-selector.vjs-2160P .vjs-menu-button .vjs-icon-placeholder::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(./svgs/badge-4k-fill.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50%;
+}
+
+.video-js .vjs-quality-selector .vjs-menu-item {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-js .vjs-quality-selector .vjs-menu-item:hover {
+    background-color: rgba(75, 75, 75, 0.5);
+}
+
+.video-js .vjs-quality-selector .vjs-menu-item.vjs-selected {
+    color: rgb(191, 19, 19);
+}
+
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder {
+    position: relative;
+    margin: auto auto;
+    width: 50%;
+    height: 50%;
+}
+
+.video-js .vjs-fullscreen-control .vjs-icon-placeholder::before {
+    content: '';
+    box-sizing: border-box;
+    background-image: url(./svgs/left-right-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 60%;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.vjs-icon-fullscreen-exit:before, .video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder:before {
+    content: '';
+}
+
+.video-js .vjs-picture-in-picture-control .vjs-icon-placeholder::before {
+    transform: scaleX(-1);
+}
+
+@media all and (max-width: 600px) {
+    * {
+        font-size: 0.8rem;
+    }
+    
+    .video-js .vjs-big-play-button {
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        background: none;
+        border: 4px solid white;
+        top: 52%;
+        left: 53%;
+    }
+    
+    .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+        font-size: 2em;
+        margin-top: 9%;
+    }
+
+    .video-js .vjs-progress-control {
+        bottom: 40px;
+    }
+
+    .video-js .vjs-play-progress::after {
+        top: -0.20em;
+    }
+
+    .video-js .vjs-quality-selector.vjs-360P .vjs-menu-button .vjs-icon-placeholder::before,
+    .video-js .vjs-quality-selector.vjs-480P .vjs-menu-button .vjs-icon-placeholder::before,
+    .video-js .vjs-quality-selector.vjs-540P .vjs-menu-button .vjs-icon-placeholder::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(./svgs/badge-sd-fill.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 50%;
+    }
+
+    .video-js .vjs-quality-selector.vjs-720P .vjs-menu-button .vjs-icon-placeholder::before,
+    .video-js .vjs-quality-selector.vjs-1080P .vjs-menu-button .vjs-icon-placeholder::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(./svgs/badge-hd-fill.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 50%;
+    }
+
+    .video-js .vjs-quality-selector.vjs-2160P .vjs-menu-button .vjs-icon-placeholder::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(./svgs/badge-4k-fill.svg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 50%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .video-js .vjs-big-play-button {
+        border-radius: 50%;
+        width: 2.8em;
+        height: 2.8em;
+        background: none;
+        border: 5px solid white;
+    }
+    
+    .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+        font-size: 2.5em;
+        margin-top: 20%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .video-js {
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .video-js .vjs-big-play-button {
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        background: none;
+        border: 5px solid white;
+    }
+    
+    .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+        font-size: 3em;
+        margin-top: 23%;
+    }
+}
