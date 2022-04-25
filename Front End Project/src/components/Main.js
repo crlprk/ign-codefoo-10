@@ -19,7 +19,13 @@ export class Main extends React.Component {
         // Loads all videos from api(https://ign-apis.herokuapp.com/) into playlist then displays
         const requests = [];
         for (let i = 0; i < 16; i++) {
-            requests.push(fetch("/videos?startIndex=" + (20 * i) + "&count=20"));
+
+            /*
+                Due to the api not having a Access-Control-Allow-Origin header, CORS policy causes a failed fetch request without a proxy server of some sort. 
+                Due to only developing a front end program and deploying to github pages, a temporary proxy server was used.
+                In a real production environment, a self-hosted proxy server or backend server would replace the temporary server in the fetch request or the API server would be reconfigured
+            */
+            requests.push(fetch("https://cors-anywhere.herokuapp.com/https://ign-apis.herokuapp.com/videos?startIndex=" + (20 * i) + "&count=20"));
         }
         Promise.all(requests)
             .then(res => Promise.all(res.map(r => r.json())))
