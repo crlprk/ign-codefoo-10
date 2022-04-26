@@ -10,12 +10,13 @@ This project was bootstrapped using [Create React App](https://github.com/facebo
 **Recommended:**
 In order to run a development build of the project, clone this repository and from within:
 ```sh
-npm start
+npm install     // Installs Dependencies
+npm start       // Runs Development Server on Local
 ```
 
 **Notice**
 
->Before building or running the project, a proxy server is required (More information in Details). The project comes with a [temporary server](https://cors-anywhere.herokuapp.com/corsdemo), but can be changed to use any proxy server in **line 28** of [Main.js](https://github.com/crlprk/ign-codefoo-10/blob/master/src/components/Main.js). <br> <br> **If building, line 29 must be commented and line 28 uncommented.**
+>Before building or running the project, a proxy server is required (More information in Details). The project comes with a [temporary server](https://cors-anywhere.herokuapp.com/corsdemo), but can be changed to use any proxy server in **line 28** of [Main.js](https://github.com/crlprk/ign-codefoo-10/blob/master/src/components/Main.js). <br> <br> This project is set to run using the local development server as a proxy by default, this can be changed by commenting or deleting line 29 of [Main.js](https://github.com/crlprk/ign-codefoo-10/blob/master/src/components/Main.js) and uncommenting line 28. <br> <br> **If building, line 29 must be commented and line 28 uncommented.**
 
 <br>
 
@@ -34,6 +35,8 @@ In order to build the project, clone this repository and from within it:
 npm run build
 ```
 You can now deploy a bundled version of the website to anywhere of your choosing. 
+
+More information on deploying can be found [here](https://create-react-app.dev/docs/deployment/).
 
 
 

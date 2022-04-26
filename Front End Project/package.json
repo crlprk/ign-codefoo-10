@@ -14,8 +14,6 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -42,6 +40,5 @@
     "devDependencies": {
         "video.js": "^7.18.1"
     },
-    "proxy": "https://ign-apis.herokuapp.com",
-    "homepage": "https://crlprk.github.io/ign-codefoo-10"
+    "proxy": "https://ign-apis.herokuapp.com"
 }
