@@ -21,7 +21,7 @@ export class PlaylistItem extends React.Component {
         return (
             <li className="playlist-item-container" onClick={() => this.changeVideo(this.props.index)}>
                 <Thumbnail img={this.props.thumbnails} timestamp={this.props.metadata.duration} />
-                <p className="playlist-item-title">{this.props.metadata.title}</p>
+                <p className="title">{this.props.metadata.title}</p>
             </li>
         );
     }

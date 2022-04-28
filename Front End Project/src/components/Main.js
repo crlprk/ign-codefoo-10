@@ -26,7 +26,7 @@ export class Main extends React.Component {
                 In a real production environment, a self-hosted proxy server or backend server would replace the temporary server in the fetch request or the API server would be reconfigured
             */
             //requests.push(fetch("https://cors-anywhere.herokuapp.com/https://ign-apis.herokuapp.com/videos?startIndex=" + (20 * i) + "&count=20"));   // Temporary proxy server, uncomment before build
-            requests.push(fetch("https://ign-apis.herokuapp.com/videos?startIndex=" + (20 * i) + "&count=20"));   // Alternative link if running in development mode
+            requests.push(fetch("/videos?startIndex=" + (20 * i) + "&count=20"));   // Alternative link if running in development mode
         }
         Promise.all(requests)
             .then(res => Promise.all(res.map(r => r.json())))
@@ -56,7 +56,7 @@ export class Main extends React.Component {
      */
     changeVideo = (index) => {
         // Check if input is greater than max index
-        if (index > 319) return;  // Hardcoded value of 320, can be changed to this.state.videos.index for dynamic length playlists
+        if (index > 319) return;  // Hardcoded value of 320, can be changed to this.state.videos.length for dynamic length playlists
         this.setState({
             index: index,
         });

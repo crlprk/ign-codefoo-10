@@ -1,0 +1,358 @@
+@media all and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-main .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 4em;
+    }
+
+    .navbar-main .logo {
+        width: 80px;
+    }
+
+    .navbar-main .date {
+        display: none;
+    }
+
+    .navbar-main .controls {
+        display: none;
+    }
+
+    .navbar-sub {
+        display: none;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-main .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 4em;
+    }
+
+    .navbar-main .logo {
+        width: 80px;
+    }
+
+    .navbar-main .date {
+        display: none;
+    }
+
+    .navbar-main .controls {
+        display: none;
+    }
+
+    .navbar-sub {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 5%;
+
+    }
+
+    .navbar-main .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1 0 auto;
+
+    }
+
+    .navbar-main .logo {
+        display: block;
+        height: 3em;
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .navbar-main .date {
+        display: block;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .navbar-main .controls {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;
+        flex: 1 0 auto;
+    }
+
+    .navbar-main li {
+        margin-left: auto;
+    }
+
+    .navbar-main p {
+        font-size: 1em;
+    }
+
+    .navbar-main p:hover {
+        color: rgb(191, 19, 19);
+        cursor: pointer;
+    }
+
+    .navbar-main .more-container {
+        display: flex;
+    }
+
+    .navbar-main .chevron-down {
+        width: 10px;
+        margin-left: 10px;
+    }
+
+    .navbar-main .controls .search-icon {
+        width: 18px;
+    }
+
+    .navbar-main .controls .search-icon:hover {
+        cursor: pointer;
+    }
+
+    .navbar-main .controls .profile {
+        background-color: black;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .navbar-main .controls .profile:hover {
+        cursor: pointer;
+    }
+
+    .navbar-main .controls .profile::after {
+        content: '12';
+        font-size: 0.8em;
+        color: white;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        padding: 5px;
+        background-color: rgb(191, 19, 19);
+        border-radius: 50%;
+    }
+
+    .navbar-sub {
+        display: block;
+        background-color: rgb(246, 246, 248);
+        padding: 40px 5%;
+        position: relative;
+    }
+
+    .navbar-sub::after {
+        content: '';
+        width: 100%;
+        height: 2em;
+        position: absolute;
+        left: 0;
+        bottom: -2em;
+        background: linear-gradient(rgb(205, 205, 205) 0px, transparent 10px);
+    }
+
+    .navbar-sub .controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    .navbar-sub li {
+        flex: 1 0 auto;
+        text-align: center;
+        border-right: 2px solid rgb(209, 212, 219);
+    }
+
+    .navbar-sub li:last-child {
+        border: none;
+    }
+
+    .navbar-sub p {
+        font-size: 1em;
+    }
+
+    .navbar-sub p:hover {
+        color: rgb(191, 19, 19);
+        cursor: pointer;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px 9%;
+
+    }
+
+    .navbar-main .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 1 0 auto;
+
+    }
+
+    .navbar-main .logo {
+        display: block;
+        height: 5em;
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .navbar-main .date {
+        display: block;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .navbar-main .controls {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;
+        flex: 1 0 auto;
+    }
+
+    .navbar-main li {
+        margin-left: auto;
+    }
+
+    .navbar-main p {
+        font-size: 1.5em;
+    }
+
+    .navbar-main p:hover {
+        color: rgb(191, 19, 19);
+        cursor: pointer;
+    }
+
+    .navbar-main .more-container {
+        display: flex;
+    }
+
+    .navbar-main .chevron-down {
+        width: 10px;
+        margin-left: 10px;
+    }
+
+    .navbar-main .controls .search-icon {
+        width: 25px;
+    }
+
+    .navbar-main .controls .search-icon:hover {
+        cursor: pointer;
+    }
+
+    .navbar-main .controls .profile {
+        background-color: black;
+        position: relative;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
+
+    .navbar-main .controls .profile:hover {
+        cursor: pointer;
+    }
+
+    .navbar-main .controls .profile::after {
+        content: '12';
+        color: white;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        padding: 5px;
+        background-color: rgb(191, 19, 19);
+        border-radius: 50%;
+    }
+
+    .navbar-sub {
+        display: block;
+        background-color: rgb(246, 246, 248);
+        padding: 40px 9%;
+        position: relative;
+    }
+
+    .navbar-sub::after {
+        content: '';
+        width: 100%;
+        height: 2em;
+        position: absolute;
+        left: 0;
+        bottom: -2em;
+        background: linear-gradient(rgb(205, 205, 205) 0px, transparent 10px);
+    }
+
+    .navbar-sub .controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    .navbar-sub li {
+        flex: 1 0 auto;
+        text-align: center;
+        border-right: 2px solid rgb(209, 212, 219);
+    }
+
+    .navbar-sub li:last-child {
+        border: none;
+    }
+
+    .navbar-sub p {
+        font-size: 1.4em;
+    }
+
+    .navbar-sub p:hover {
+        color: rgb(191, 19, 19);
+        cursor: pointer;
+    }
+}

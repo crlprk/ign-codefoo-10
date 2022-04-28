@@ -41,8 +41,8 @@ export class Thumbnail extends React.Component {
         
         return (
             <div className="thumbnail">
-                <img className="thumbnail-img" src={img} alt="thumbnail" />
-                <p className="thumbnail-timestamp">{timeFormatted}</p>
+                <img className="img" src={img} alt="thumbnail" />
+                <p className="timestamp">{timeFormatted}</p>
             </div>
         );
     }

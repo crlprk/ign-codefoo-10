@@ -1,4 +1,5 @@
 import React from "react";
+import "./ContentDescription.css";
 
 /**
  * Description area component
@@ -35,8 +36,8 @@ export class ContentDescription extends React.Component {
     render() {
         return (
             <div className="content-description">
-                <h1 className="content-description-video-title">{this.props.metadata.title}</h1>
-                <p className={"content-description-video-description " + this.state.isDescriptionHidden} >{this.props.metadata.description}</p>
+                <h1 className="video-title">{this.props.metadata.title}</h1>
+                <p className={"video-description " + this.state.isDescriptionHidden} >{this.props.metadata.description}</p>
                 <p className="show-toggle" onClick={() => this.showDescription()}>{this.state.showState}</p>
             </div>
         );

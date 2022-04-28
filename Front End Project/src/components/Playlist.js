@@ -1,5 +1,6 @@
 import React from 'react';
 import { PlaylistItem } from './PlaylistItem';
+import "./Playlist.css";
 
 /**
  * Playlist component
@@ -73,14 +74,14 @@ export class Playlist extends React.Component {
         }
         return (
             <div className="playlist-container">
-                <ul className="playlist-body-container">
+                <ul className="body-container">
                     {list}
                 </ul>
                 {this.state.maxDisplayIndex === 319 &&  //Display "End of Playlist" if max count reached
                     <p className="EOL">End of Playlist</p>
                 }
                 {this.state.maxDisplayIndex !== 319 &&
-                    <button className="playlist-load-button" onClick={() => this.loadVideos()}>Load More</button>
+                    <button className="load-button" onClick={() => this.loadVideos()}>Load More</button>
                 }
             </div>
         );

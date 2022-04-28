@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../svgs/ign-logo.svg';
 import searchIcon from '../svgs/search.svg';
 import chevronDown from '../svgs/chevron-down.svg';
+import "./Navbar.css";
 
 /**
  * Navbar Component for IGN-CodeFoo
